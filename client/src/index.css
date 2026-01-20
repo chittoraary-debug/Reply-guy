@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Nunito:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Pastel Palette */
+  --background: 260 100% 98%;    /* Soft Lavender White */
+  --foreground: 260 20% 20%;     /* Dark Purple-Grey text */
+
+  /* Primary: Soft Purple */
+  --primary: 260 80% 70%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary: Soft Mint */
+  --secondary: 160 60% 85%;
+  --secondary-foreground: 160 40% 20%;
+
+  /* Accent: Soft Peach/Pink */
+  --accent: 10 90% 85%;
+  --accent-foreground: 10 40% 20%;
+
+  /* Muted / Cards */
+  --card: 0 0% 100%;
+  --card-foreground: 260 20% 20%;
+  --muted: 260 20% 94%;
+  --muted-foreground: 260 10% 50%;
+
+  /* Borders */
+  --border: 260 20% 90%;
+  --input: 260 20% 90%;
+  --ring: 260 80% 70%;
+
+  --radius: 1.5rem; /* Very rounded for playful feel */
+
+  /* Font Variables */
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/50 shadow-sm;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(0.95); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}

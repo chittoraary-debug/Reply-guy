@@ -1,0 +1,66 @@
+Build a fully anonymous, voice-first web application hosted on Vercel.
+
+PRODUCT VISION
+
+Create a safe, playful, and emotionally expressive platform where anyone can record and share short audio messages anonymously. The app should feel like a “voice diary for the internet” — raw, human, and judgment-free. No identity, no social pressure, no performance.
+
+CORE CONCEPT
+
+Users can record audio directly in the browser (30–120 seconds).
+Audio can be in any language, on any topic.
+No signup, no login, no usernames, no profiles.
+Every user is represented by a randomly generated cartoon avatar.
+Listeners discover voices, not people.
+KEY FEATURES
+
+Voice Recording
+One-tap or hold-to-record interface
+Clear recording timer and waveform
+Preview before upload
+Submit anonymously
+Audio Discovery
+“Play Random Voice” mode
+Mood-based discovery (Happy, Sad, Calm, Angry, Confused, Excited, Lonely)
+Topic-agnostic by default to encourage raw expression
+Infinite listening flow (tap or swipe for next voice)
+Interaction (Light & Non-Toxic)
+Like (❤️)
+Replay (🔁)
+Save for later
+Report abuse
+Optional anonymous voice replies (no text comments)
+Anonymity by Design
+No personal data stored
+No visible metrics like followers or popularity rankings
+No public comment sections
+Daily upload limits per IP/session to reduce spam
+Random cartoon avatars assigned per session or per recording
+UI / UX DIRECTION
+
+Playful, calming, and minimal
+Soft pastel color palette
+Rounded cards, smooth transitions, subtle animations
+Cartoon / illustrated avatars instead of real faces
+Mobile-first, swipe-friendly experience
+UI should feel emotionally safe, not loud or addictive
+MODERATION & SAFETY
+
+Report button on every audio
+Basic AI moderation for hate, abuse, or extreme content
+Flagged content hidden until reviewed
+Rate limiting to prevent misuse
+TECH STACK
+
+Next.js (App Router) hosted on Vercel
+Web Audio API for in-browser recording
+Secure audio storage and streaming
+Fast performance, scalable architecture
+Privacy-first approach (no unnecessary tracking)
+DESIGN TONE
+
+Human, intimate, and expressive
+Feels like listening to strangers’ thoughts at 2 AM
+Encourages honesty, not virality
+GOAL
+
+Build an MVP that prioritizes emotional expression, anonymity, and simplicity over growth hacks or social metrics.
